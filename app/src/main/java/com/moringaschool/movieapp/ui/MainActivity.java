@@ -11,7 +11,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.moringaschool.movieapp.Listner.OnMovieClickListner;
+
+import com.moringaschool.movieapp.Listner.OnMovieClickListener;
 import com.moringaschool.movieapp.Listner.OnSearchApiListener;
 import com.moringaschool.movieapp.Models.TmdbSearchMultiResponse;
 import com.moringaschool.movieapp.R;
@@ -24,7 +25,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements OnMovieClickListner {
+public class MainActivity extends AppCompatActivity implements OnMovieClickListener {
     SearchView search_view;
     RecyclerView recycler_view_home;
     HomeRecyclerAdapter adapter;
@@ -82,13 +83,13 @@ public class MainActivity extends AppCompatActivity implements OnMovieClickListn
         recycler_view_home.setHasFixedSize(true);
         recycler_view_home.setLayoutManager(new GridLayoutManager(MainActivity.this, 2));
 
-//        initialize asapter
+//        initialize adapter
         adapter = new HomeRecyclerAdapter(this, response.getResults(), this);
         recycler_view_home.setAdapter(adapter);
     }
 
     @Override
-    public void onMovieClicked(String id) {
+    public void onMovieClicked(int id) {
         Toast.makeText(MainActivity.this, id, Toast.LENGTH_SHORT).show();
     }
 }
