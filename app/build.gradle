@@ -15,6 +15,11 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    //include TMdb-api-key in the build
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'API_KEY', ApiKey
+    }
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES.txt'
