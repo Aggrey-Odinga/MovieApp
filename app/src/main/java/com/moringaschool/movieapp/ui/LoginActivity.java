@@ -1,4 +1,4 @@
-package com.moringaschool.movieapp;
+package com.moringaschool.movieapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.moringaschool.movieapp.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

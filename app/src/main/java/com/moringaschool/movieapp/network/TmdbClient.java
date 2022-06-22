@@ -1,6 +1,9 @@
-package com.moringaschool.movieapp;
+package com.moringaschool.movieapp.network;
 
 import static com.moringaschool.movieapp.Constants.MovieApp_Base_Url;
+
+import com.moringaschool.movieapp.Models.TmdbApi;
+
 
 import java.io.IOException;
 

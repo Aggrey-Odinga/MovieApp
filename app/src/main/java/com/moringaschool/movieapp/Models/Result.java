@@ -1,5 +1,5 @@
 
-package com.moringaschool.movieapp;
+package com.moringaschool.movieapp.Models;
 
 import java.util.List;
 

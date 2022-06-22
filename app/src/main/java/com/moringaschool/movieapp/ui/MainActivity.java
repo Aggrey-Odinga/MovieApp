@@ -1,4 +1,4 @@
-package com.moringaschool.movieapp;
+package com.moringaschool.movieapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+
+import com.moringaschool.movieapp.R;
 
 import java.util.List;
 

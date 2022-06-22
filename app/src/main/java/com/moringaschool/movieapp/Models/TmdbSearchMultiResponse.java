@@ -1,10 +1,11 @@
 
-package com.moringaschool.movieapp;
+package com.moringaschool.movieapp.Models;
 
 import java.util.List;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.moringaschool.movieapp.Models.Result;
 
 
 public class TmdbSearchMultiResponse {
