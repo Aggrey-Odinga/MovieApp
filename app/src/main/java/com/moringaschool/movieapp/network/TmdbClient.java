@@ -4,6 +4,7 @@ package com.moringaschool.movieapp.network;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.moringaschool.movieapp.Constants;
 import com.moringaschool.movieapp.Listner.OnSearchApiListener;
 
 import com.moringaschool.movieapp.Models.TmdbSearchMultiResponse;
@@ -28,9 +29,9 @@ public class TmdbClient {
     }
 //    method for accessing the interface
 
-    public void searchMovies(OnSearchApiListener listener, String query, String apikey){
+    public void searchMovies(OnSearchApiListener listener, String query){
         getMovies getMovies = retrofit.create(TmdbClient.getMovies.class);
-        Call<TmdbSearchMultiResponse> call = getMovies.getMovies(query, apikey);
+        Call<TmdbSearchMultiResponse> call = getMovies.getMovies(Constants.API_KEY, query);
 
         call.enqueue(new Callback<TmdbSearchMultiResponse>() {
             @Override
