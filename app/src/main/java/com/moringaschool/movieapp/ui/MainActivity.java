@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.moringaschool.movieapp.R;
+import com.moringaschool.movieapp.adapters.HomeRecyclerAdapter;
 
 import java.util.List;
 
@@ -19,6 +20,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     SearchView search_view;
     RecyclerView recycler_view_home;
+    HomeRecyclerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
